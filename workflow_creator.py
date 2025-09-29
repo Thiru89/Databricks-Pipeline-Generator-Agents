@@ -27,8 +27,8 @@ def generate_workflow_yaml(file_path: str) ->str:
     example job looks like this 
 resources:
   jobs:
-    New_Job_Sep_28_2025_07_24_PM:
-      name: New Job Sep 28, 2025, 07:24 PM
+    Job_Name:
+      name: Job_Name
       tasks:
         - task_key: Test
           spark_python_task:
