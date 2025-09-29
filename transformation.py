@@ -67,6 +67,8 @@ print("Generate Pyspark Code:\n")
 print(response)
 
 
-response2 = response.strip('```').replace('python','')
-print(response2)
-exec(response2)
+response2 = response.strip('').replace('```python','')
+response3 = response2.strip('').replace('```','')
+with open("/Workspace/Users/<>/generated_code.py", "w") as f:
+    f.write(response3)
+print(response3)
